@@ -1,0 +1,303 @@
+{
+	"info": {
+		"_postman_id": "10d30d34-60f2-4aa9-911e-6bae9537889e",
+		"name": "MovieChallenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24510290"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"usuario\": \"user@gmail.com\",\r\n  \"contrasena\": \"Sapi12345\"\r\n}\r\n// normal user: user@gmail.com",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/Usuario/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"Usuario",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register New User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN0cmluZzIzMiIsIm5hbWVpZCI6IjQiLCJmYW1pbHlfbmFtZSI6IiIsIm5iZiI6MTY4MzIxMjY3NywiZXhwIjoxNjgzMjQxNDc3LCJpYXQiOjE2ODMyMTI2Nzd9.WlTq-8xQl5fRN4VKjc-jacmVd4STL4T9pQHOw2Wo-gk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"TipoUsuario\":\"admin\", // use \"user\" if u want create a normal user\r\n  \"nombre\": \"Test Create\",\r\n  \"email\": \"Test@gmail.com\",\r\n  \"identificadorAcceso\": \"User Test\",\r\n  \"contrasena\": \"Test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/Usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"Usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Movie",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXJAZ21haWwuY29tIiwibmFtZWlkIjoiMiIsImZhbWlseV9uYW1lIjoiIiwibmJmIjoxNjgzMjMyNzQzLCJleHAiOjE2ODMyNjE1NDMsImlhdCI6MTY4MzIzMjc0M30.-a2Q17VCsi-g2cnHRv1YZ2t_o6TGLlS0VV3pWiPSqXU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Test Insert\",\r\n  \"releaseYear\": 2023,\r\n  \"synopsis\": \"Test Insert\",\r\n  \"category\": \"Test Insert\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/Movie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"Movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Updated Movie By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN0cmluZzIzMiIsIm5hbWVpZCI6IjQiLCJmYW1pbHlfbmFtZSI6IiIsIm5iZiI6MTY4MzIxMjc3NiwiZXhwIjoxNjgzMjQxNTc2LCJpYXQiOjE2ODMyMTI3NzZ9.7hnvb5P4wsJ2_knxW3jMdiqe-SjtIpRYELPeoIDtIVY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\":4,\r\n  \"name\": \"Test  Update\",\r\n  \"releaseYear\": 2023,\r\n  \"synopsis\": \"Test Update\",\r\n  \"category\": \"Test Update\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/Movie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"Movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Movie",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQHlvcG1haWwuY29tIiwibmFtZWlkIjoiMSIsImZhbWlseV9uYW1lIjoiIiwibmJmIjoxNjgzMTg3NjI5LCJleHAiOjE2ODMyMTY0MjksImlhdCI6MTY4MzE4NzYyOX0.FHeT2hr4j_Tnfc4L5M_6odWeazbNAPsttJD7WuXGjtI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/Movie/id?id=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"Movie",
+						"id"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rate Movie by MovieId",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQHlvcG1haWwuY29tIiwibmFtZWlkIjoiMSIsImZhbWlseV9uYW1lIjoiIiwibmJmIjoxNjgzMTk3ODkyLCJleHAiOjE2ODMyMjY2OTIsImlhdCI6MTY4MzE5Nzg5Mn0.ZjJ6Kt5KbN_X2Zz7RZzDIRbsecZ0eyIJcobR-z35lh4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"movieId\": 3,\r\n    \"rating\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/Movie/rate-movie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"Movie",
+						"rate-movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Rated Movies",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsIm5hbWVpZCI6IjEiLCJmYW1pbHlfbmFtZSI6IiIsIm5iZiI6MTY4MzIzMjE1NCwiZXhwIjoxNjgzMjYwOTU0LCJpYXQiOjE2ODMyMzIxNTR9.1x4XjCkSo52UNBsLZvb44bWW7NKHCaRtKkkVLQ-Zeb0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/Movie/rate-movie/consultar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"Movie",
+						"rate-movie",
+						"consultar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movies Paginated",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"pageNumber\": 1, // number of current page\r\n  \"nameOrSypnosis\": \"\", // Serach by Name or Sypnosis\r\n  \"category\": \"\", // category for example: Drama,Crime,Action,Sci-Fi, etc.\r\n  \"year\": 0, // year of realese\r\n  \"orderBy\": \"\", // order by for example: year or name\r\n  \"pageSize\": 3 // page size\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/Movie/listMovies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"Movie",
+						"listMovies"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

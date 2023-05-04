@@ -1,0 +1,15 @@
+C:\Users\Alex Palma\Desktop\Challenge\MovieChallenge\Aplicacion\bin\Debug\net6.0\Aplicacion.deps.json
+C:\Users\Alex Palma\Desktop\Challenge\MovieChallenge\Aplicacion\bin\Debug\net6.0\Aplicacion.dll
+C:\Users\Alex Palma\Desktop\Challenge\MovieChallenge\Aplicacion\bin\Debug\net6.0\Aplicacion.pdb
+C:\Users\Alex Palma\Desktop\Challenge\MovieChallenge\Aplicacion\bin\Debug\net6.0\Dominio.dll
+C:\Users\Alex Palma\Desktop\Challenge\MovieChallenge\Aplicacion\bin\Debug\net6.0\Dominio.pdb
+C:\Users\Alex Palma\Desktop\Challenge\MovieChallenge\Aplicacion\obj\Debug\net6.0\Aplicacion.csproj.AssemblyReference.cache
+C:\Users\Alex Palma\Desktop\Challenge\MovieChallenge\Aplicacion\obj\Debug\net6.0\Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alex Palma\Desktop\Challenge\MovieChallenge\Aplicacion\obj\Debug\net6.0\Aplicacion.AssemblyInfoInputs.cache
+C:\Users\Alex Palma\Desktop\Challenge\MovieChallenge\Aplicacion\obj\Debug\net6.0\Aplicacion.AssemblyInfo.cs
+C:\Users\Alex Palma\Desktop\Challenge\MovieChallenge\Aplicacion\obj\Debug\net6.0\Aplicacion.csproj.CoreCompileInputs.cache
+C:\Users\Alex Palma\Desktop\Challenge\MovieChallenge\Aplicacion\obj\Debug\net6.0\Aplicacion.csproj.CopyComplete
+C:\Users\Alex Palma\Desktop\Challenge\MovieChallenge\Aplicacion\obj\Debug\net6.0\Aplicacion.dll
+C:\Users\Alex Palma\Desktop\Challenge\MovieChallenge\Aplicacion\obj\Debug\net6.0\refint\Aplicacion.dll
+C:\Users\Alex Palma\Desktop\Challenge\MovieChallenge\Aplicacion\obj\Debug\net6.0\Aplicacion.pdb
+C:\Users\Alex Palma\Desktop\Challenge\MovieChallenge\Aplicacion\obj\Debug\net6.0\ref\Aplicacion.dll
